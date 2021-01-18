@@ -55,8 +55,8 @@
 ## addressテーブル
 |Column|Type|Options|
 |------|----|-------|
-|postcode_id|integer|null: false|
-|prefecture|string|null: false|
+|postcode|string|null: false|
+|shiping_address_id|integer|null: false|
 |city|string|null: false|
 |block|string|null: false|
 |building|string||
