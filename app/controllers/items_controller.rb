@@ -8,12 +8,11 @@ class ItemsController < ApplicationController
   end
 
   def create
-    binding.pry
     Item.create(item_params)
   end
 
   private
   def item_params
-    params.require(:item).permit(:name, :image, :details, :prcie ,:shiping_address_id)
+    params.require(:item).permit(:name, :image, :details, :prcie ,:shiping_address_id,:category_id,:status_id,:delivery_fee_id,:shiping_address_id,:shiping_date_id).merge(user_id: 1)
   end
 end
