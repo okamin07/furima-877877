@@ -4,7 +4,7 @@ window.addEventListener('load', () => {
     inputValue = Number(priceInput.value);
     const addTaxDom = document.getElementById("add-tax-price");
     const addProfitlDom = document.getElementById("profit");
-    const tax = inputValue * 0.1
+    const tax = Math.round(inputValue * 0.1)
     addTaxDom.innerHTML = `${tax}`
     addProfitlDom.innerHTML = `${inputValue - tax}`
   })
