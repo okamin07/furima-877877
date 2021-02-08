@@ -125,44 +125,6 @@
     <h2 class='title'>ピックアップカテゴリー</h2>
     <%= link_to '新規投稿商品', "#", class: "subtitle" %>
     <ul class='item-lists'>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-      <% if @items.present? %>
-        <% @items.each do |item| %>
-          <li class='list'>
-            <%= link_to "#" do %>
-            <div class='item-img-content'>
-              <%= image_tag item.image, class: "item-img" %>
->>>>>>> Stashed changes
-
-              <% if item.order %>
-              <div class='sold-out'>
-                <span>Sold Out!!</span>
-              </div>
-              <% end %>
-
-            </div>
-            <div class='item-info'>
-              <h3 class='item-name'>
-                <%= item.name %>
-              </h3>
-              <div class='item-price'>
-                <span><%= item.price %>円<br><%= item.delivery_fee.name %></span>
-                <div class='star-btn'>
-                  <%= image_tag "star.png", class:"star-icon" %>
-                  <span class='star-count'>0</span>
-                </div>
-              </div>
-            </div>
-<<<<<<< Updated upstream
-          </div>
-        </div>
-        <% end %>
-      </li>
-      <%# //商品がある場合は表示されないようにしましょう %>
-      <%# //商品がない場合は以下のダミー商品が表示されるようにしましょう %>
-=======
       <% if @items.present? %>
         <% @items.each do |item| %>
           <li class='list'>
@@ -187,8 +149,6 @@
                   </div>
                 </div>
               </div>
-=======
->>>>>>> Stashed changes
             <% end %>
           <% end %>
         </li>
@@ -209,14 +169,8 @@
               </div>
             </div>
           <% end %>
-<<<<<<< Updated upstream
         </li>
       <% end %>
->>>>>>> Stashed changes
-=======
-         </li>
-      <% end %>
->>>>>>> Stashed changes
     </ul>
   </div>
   <%# /商品一覧 %>

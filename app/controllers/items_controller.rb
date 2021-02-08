@@ -2,15 +2,7 @@ class ItemsController < ApplicationController
   before_action :authenticate_user!, except: :index
 
   def index
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    
-=======
     @items = Item.all.order(created_at: "DESC")
->>>>>>> Stashed changes
-=======
-    @items = Item.all.order(created_at: "DESC")
->>>>>>> Stashed changes
   end
 
   def new
